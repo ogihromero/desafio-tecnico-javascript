@@ -8,6 +8,12 @@ function somaDiv3ou5(numero) {
   return total;
 }
 
+function calcular_onclick() {
+  let numero = document.getElementById("numero").value;
+  document.getElementById("resultado").innerHTML =
+    " Resultado:" + somaDiv3ou5(numero);
+}
+
 const readline = require("readline");
 let rl = readline.createInterface(process.stdin, process.stdout);
 rl.question("Digite um número positivo: ", (numero) => {
